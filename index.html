@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>AIR SUPPORT</title>
+
+    <!-- CSS Files -->
+    <link href="css/reset.css" rel="stylesheet" media="all">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="all">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link href="css/style-en.css" rel="stylesheet" media="all">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="expanded">
+    <div class="fixed-nav sticky-footer bg-dark">
+        <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+            <button class="toggle-side-menu"><i class="glyphicon glyphicon-menu-hamburger"></i></button>
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.PNG" alt="AirSupport" class="img-responsive">
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>                
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+                    <li class="nav-item active">
+                        <a class="nav-link">
+                            <i class="glyphicon glyphicon-th-large"></i>
+                            <span class="nav-link-text">dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <i class="glyphicon glyphicon-plane"></i>
+                            <span class="nav-link-text">flights</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <i class="glyphicon glyphicon-signal"></i>
+                            <span class="nav-link-text">statistics</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <i class="glyphicon glyphicon-send"></i>
+                            <span class="nav-link-text">trips</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav setting-list">
+                    <li class="nav-item">
+                        <img src="img/avatar.png" alt="profile" class="img-responsive avatar">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mr-lg-2"> <i class="glyphicon glyphicon-cog"></i></a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <div class="content-wrapper mobile-view">
+
+            <div class="right-side-menu">
+                <ul class="option-list">
+                    <li class="option-item">
+                        <a class="option-link"><i class="toggle-option-menu glyphicon glyphicon-arrow-left"></i></a>
+                    </li>
+                    <li class="option-item">
+                        <a class="share-option option-link"><i class="glyphicon glyphicon-new-window"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="option-menu">
+
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#flights" aria-controls="flights" role="tab" data-toggle="tab">flights</a></li>
+                    <li role="presentation"><a href="#error-flight" aria-controls="error-flight" role="tab" data-toggle="tab">error flights (2)</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="flights">
+                        <div class="trip-info">
+                            <div class="col-xs-8 flight-id">
+                                <p class="label">Flight ID</p>
+                                <span class="id-flight">58741</span>
+                            </div>
+                            <div class="col-xs-4 trail">
+                                <p class="label">trail</p>
+                                <span class="id-flight">16284</span>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="full-trip-info">
+                                <ul class="trip-time-line">
+                                    <li class="trip-item">
+                                        <span class="indecator source"></span>
+                                        <div class="trip-description">
+                                            <div class="area">
+                                                <p class="airport">JFK Airport</p>
+                                                <p class="country">USA</p>
+                                            </div>
+                                            <button class="airpot-info">airport info</button>
+                                        </div>
+                                    </li>
+                                    <li class="trip-item">
+                                        <span class="indecator destination"></span>
+                                        <div class="trip-description">
+                                            <div class="area">
+                                                <p class="airport">copenhagn</p>
+                                                <p class="country">denmark</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="full-trip-info">
+                                <ul class="trip-time-line">
+                                    <li class="trip-item">
+                                        <span class="indecator source"></span>
+                                        <div class="trip-description">
+                                            <div class="area">
+                                                <p class="airport">JFK Airport</p>
+                                                <p class="country">USA</p>
+                                            </div>
+                                            <button class="airpot-info">airport info</button>
+                                        </div>
+                                    </li>
+                                    <li class="trip-item">
+                                        <span class="indecator destination"></span>
+                                        <div class="trip-description">
+                                            <div class="area">
+                                                <p class="airport">copenhagn</p>
+                                                <p class="country">denmark</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="error-flight">
+                        <div class="trip-info">
+                            <div class="col-xs-8 flight-id">
+                                <p class="label">Flight ID</p>
+                                <span class="id-flight">12658</span>
+                            </div>
+                            <div class="col-xs-4 trail">
+                                <p class="label">trail</p>
+                                <span class="id-flight">152483</span>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="full-trip-info">
+                                <ul class="trip-time-line">
+                                    <li class="trip-item">
+                                        <span class="indecator source"></span>
+                                        <div class="trip-description">
+                                            <div class="area">
+                                                <p class="airport">JFK Airport</p>
+                                                <p class="country">USA</p>
+                                            </div>
+                                            <button class="airpot-info">airport info</button>
+                                        </div>
+                                    </li>
+                                    <li class="trip-item">
+                                        <span class="indecator destination"></span>
+                                        <div class="trip-description">
+                                            <div class="area">
+                                                <p class="airport">copenhagn</p>
+                                                <p class="country">denmark</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="full-trip-info">
+                                <ul class="trip-time-line">
+                                    <li class="trip-item">
+                                        <span class="indecator source"></span>
+                                        <div class="trip-description">
+                                            <div class="area">
+                                                <p class="airport">JFK Airport</p>
+                                                <p class="country">USA</p>
+                                            </div>
+                                            <button class="airpot-info">airport info</button>
+                                        </div>
+                                    </li>
+                                    <li class="trip-item">
+                                        <span class="indecator destination"></span>
+                                        <div class="trip-description">
+                                            <div class="area">
+                                                <p class="airport">copenhagn</p>
+                                                <p class="country">denmark</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <footer></footer>
+
+        <!--start the whole body of the app-->
+
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/custom.js"></script>
+</body>
+
+</html>
